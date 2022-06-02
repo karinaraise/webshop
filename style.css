@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,400&display=swap');
 
 *{
     margin: 0;
@@ -65,15 +65,21 @@ body{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
     position: sticky;
-    top: 0;
-    left: 0;
 }
 
+.titel {
+    font-size: 30px;
+}
+
+.subtitel{
+    font-style: italic;
+    font-size: 12px;
+}
 #navbar{
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center; /* deze 3 codes zorgen er voor dat de menu naast elkaar komen, dus 1 row in plaats van 1 columm*/
-
+    margin-right: 0;
 }
 
 #navbar li{
