@@ -302,3 +302,51 @@ body{
     bottom: 20px;
     right: 10px;
 }
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #073848;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px;
+}
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #ededf3;
+}
+
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #ededf3;
+}
+
+#newsletter p span{
+    color: #f2c65e;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input{
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
