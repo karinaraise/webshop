@@ -49,12 +49,12 @@ button.normal {
     font-weight: 600;
     padding: 15px 30px;
     color: white;
-    background-color: #ed6c8c;
+    background-color: #E9476F;
     border-radius: 25px;
     border: none;
     cursor: pointer;
     outline: none;
-    transition: 0.2s;
+    transition: 0.2s ease-in-out;
 }
 
 body{
@@ -149,20 +149,13 @@ body{
 }
 
 #hero button {
-    background-color: #E9476F;
-    color: white;
-    border: 0;
     padding: 14px 80px 14px 65px;
-    border-radius: 25px;
-    cursor: pointer;
     font-weight: 700;
     font-size: 15px;
     letter-spacing: 2px;
 }
 
 #hero button:hover {
-    background-color: #E9476F;
-    color: white;
     transition: 0.6s;
     transform: scale(1.1);
 }
@@ -201,8 +194,6 @@ body{
     color: #073848;
 }
 
-
-
 #banner{
     display: flex;
     flex-direction: column;
@@ -234,8 +225,6 @@ body{
 }
 
 #banner button:hover {
-    background-color: #E9476F;
-    color: white;
     transition: 0.6s;
     transform: scale(1.1);
 }
