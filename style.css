@@ -356,6 +356,12 @@ body{
     white-space: nowrap;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    background-color: #E9476F;
+}
+#newsletter button:hover{
+    transition: 0.6s;
+    transform: scale(1.1);
+    background-color: #E9476F;
 }
 
 footer{
@@ -637,6 +643,12 @@ footer .copyright{
     line-height: 25%;
 }
 
+#prodetails button:hover{
+    transition: 0.6s;
+    transform: scale(1.1);
+    background-color: #E9476F;
+}
+
 /* blog page*/ 
 #page-header.blog-header{
     background-image: url("images/banners/banner3.png");
@@ -762,6 +774,33 @@ footer .copyright{
     background-image: url("images/blog/blog-img1.png");
 }
 /* einde artikel blog page*/
+
+/* about page */
+#page-header.about-header {
+background-image: url("images/banners/banner4.png");
+}
+#about-head {
+    display: block;
+    line-height: 1;
+    color:#1a718e;
+    text-align: center;
+    padding: 60px 300px;
+}
+
+#about-head h2{
+    font-weight: 700;
+    font-size: 25px;
+    color:#1a718e;
+}
+#about-head a{
+    text-decoration: none;
+    color:#faabbe;
+    transition: 0.3s ease-in-out;
+}
+#about-head a:hover{
+    color: #E9476F;
+}
+/* eind about page */
 
 @keyframes fade {
     from {opacity: .4}
