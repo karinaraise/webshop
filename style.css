@@ -426,6 +426,7 @@ footer .copyright{
     text-align: center;
     flex-direction: column;
     padding: 14px;
+    text-shadow: 2px 2px 4px#073848;
 }
 
 #page-header h2,
@@ -635,8 +636,84 @@ footer .copyright{
 #prodetails .single-pro-details span {
     line-height: 25%;
 }
-  
-  @keyframes fade {
+
+/* blog page*/ 
+#page-header.blog-header{
+    background-image: url("images/banners/banner3.png");
+}
+
+#blog {
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+#blog .blog-img {
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .blog-details {
+    width: 50%;
+}
+
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 14px;
+    color:#faabbe;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+#blog .blog-details a::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #faabbe;
+    position: absolute;
+    top: 7px;
+    right: -60px;
+    transition: 0.3s ease-in-out;
+}
+
+#blog .blog-details a:hover{
+    color: #E9476F;
+}
+
+#blog .blog-details a:hover::after{
+    background-color: #E9476F;
+}
+
+#blog .blog-box h1{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #faabbe;
+    z-index: -9;
+}
+
+/* eing blog page */
+
+/* artikel blog page*/
+
+/* einde artikel blog page*/
+
+@keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
   } /* tot hier niew slide */
@@ -741,7 +818,7 @@ footer .copyright{
         width: 100%;
     } 
 
-    /*eind singel product*/
+    /*eind single product*/
 
     #banner{
     height: 20vh;
@@ -835,4 +912,23 @@ footer .copyright{
         text-align: start;
     }
 
+    /* blog page */
+    #blog {
+        padding: 100px 20px 0 20px;
+    }
+    #blog .blog-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    #blog .blog-img {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    #blog .blog-details{
+        width: 100%;
+    }
+    /* eind blog page*/
 }
