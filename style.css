@@ -914,6 +914,10 @@ background-image: url("images/banners/banner4.png");
     background-size: 100%;
     }
 
+    #banner h2{
+        font-size: 24px;
+    }
+
     #newsletter .form{
         width: 70%;
     }
@@ -939,6 +943,12 @@ background-image: url("images/banners/banner4.png");
         font-size: 24px;
     }
     /* eind article page*/
+    
+    /* about page */
+    #about-head {
+        padding: 40px 40px 0 40px;
+    }
+    /* eind about page */
 }
 
 @media (max-width: 477px){
