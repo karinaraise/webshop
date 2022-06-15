@@ -802,6 +802,87 @@ background-image: url("images/banners/banner4.png");
 }
 /* eind about page */
 
+/* contact page */
+#page-header{
+    background-image: url("images/banners/banner5.png");
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    text-shadow: 2px 2px 4px#073848;
+}
+
+#contact-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-details .details{
+    width: 40%;
+    border: 1px solid #f2c65e;
+}
+
+#contact-details .form-details{
+    width: 40%;
+    border: 1px solid #f2c65e;
+}
+
+#contact-details .details span,
+.form-details form{
+    font-size: 18px;
+}
+
+#contact-details .details h2,
+.form-details form h2{
+    font-size: 20px;
+    line-height: 25px;
+    padding: 20px 0;
+}
+
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+#contact-details .details li i{
+    font-size: 20px;
+    padding-right: 22px;
+    color: #f2c65e;
+}
+#contact-details .details li p{
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact-details .form-details form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#contact-details .form-details form input,
+#contact-details .form-details form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #faabbe;
+}
+#contact-details .form-details form button{
+    margin-left: auto;
+}
+#contact-details .form-details form button:hover{
+    transition: 0.6s;
+    transform: scale(1.1);
+    background-color: #E9476F;
+}
+/* eind contact page */
+
+
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
