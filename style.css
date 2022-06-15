@@ -786,7 +786,6 @@ background-image: url("images/banners/banner4.png");
     text-align: center;
     padding: 60px 300px;
 }
-
 #about-head h2{
     font-weight: 700;
     font-size: 25px;
@@ -803,7 +802,7 @@ background-image: url("images/banners/banner4.png");
 /* eind about page */
 
 /* contact page */
-#page-header{
+#page-header.contact-header{
     background-image: url("images/banners/banner5.png");
     background-size: cover;
     width: 100%;
@@ -821,15 +820,11 @@ background-image: url("images/banners/banner4.png");
     justify-content: space-between;
 }
 
-#contact-details .details{
-    width: 40%;
-    border: 1px solid #f2c65e;
+#contact-details .details,
+#contact-details .form-details{
+    width: 47%;
 }
 
-#contact-details .form-details{
-    width: 40%;
-    border: 1px solid #f2c65e;
-}
 
 #contact-details .details span,
 .form-details form{
@@ -838,8 +833,8 @@ background-image: url("images/banners/banner4.png");
 
 #contact-details .details h2,
 .form-details form h2{
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 25px;
+    line-height: 35px;
     padding: 20px 0;
 }
 
@@ -847,14 +842,19 @@ background-image: url("images/banners/banner4.png");
     list-style: none;
     display: flex;
     padding: 10px 0;
+    position: relative;
 }
 #contact-details .details li i{
     font-size: 20px;
-    padding-right: 22px;
-    color: #f2c65e;
+    color: white;
+    background-color: #f2c65e;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 14px;
 }
 #contact-details .details li p{
-    margin: 0;
+    margin-left: 50px;
     font-size: 14px;
 }
 
@@ -1030,6 +1030,17 @@ background-image: url("images/banners/banner4.png");
         padding: 40px 40px 0 40px;
     }
     /* eind about page */
+
+    /* contact page */
+    #page-header.contact-header{
+        background-position: right;
+        text-shadow: 1px 1px 3px#073848;
+    }
+    #page-header.contact-header h2{
+        font-size: 32px;
+        padding: 0;
+    }
+    /* eind contact page*/
 }
 
 @media (max-width: 477px){
@@ -1115,23 +1126,30 @@ background-image: url("images/banners/banner4.png");
     }
 
     /* blog page */
-    #article {
-        padding: 100px 20px 0 20px;
+    #blog {
+        padding: 15px 15px;
     }
-    #article .blog-box{
+    #blog .blog-box{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin-top: 20px;
+        margin-top: 40px;
+        padding-bottom: 50px;
     }
-    #article .blog-img {
+    #blog .blog-box h4{
+        font-size: 26px;
+        line-height: 1;
+    }
+    #blog .blog-box p{
+        margin: 0;
+    }
+    #blog .blog-img {
         width: 100%;
-        margin-right: 0px;
-        margin-bottom: 30px;
     }
-    #article .blog-details{
+    #blog .blog-details{
         width: 100%;
     }
+    
     /* eind blog page*/
     
     /* article page*/
@@ -1155,4 +1173,33 @@ background-image: url("images/banners/banner4.png");
         font-size: 24px;
     }
     /* eind article page*/
+
+    /* contact page */ 
+    #contact-details {
+        flex-direction: column;
+    }
+    #contact-details .details{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #contact-details .form-details{
+        width: 100%;
+    }
+    #contact-details .details h2, .form-details form h2{
+        font-size: 15px;
+        line-height: 20px;
+        padding: 0;
+    }
+    #contact-details .details span, .form-details form span{
+        padding: 0;
+    }
+    #contact-details .form-details form{
+        width: 100%;
+    }
+    #contact-details .form-details form input, #contact-details .form-details form textarea{
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    }
+    /*eind contact page */
 }
