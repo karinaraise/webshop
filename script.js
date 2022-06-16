@@ -43,3 +43,10 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 } //tot hier foto slide
+
+//add product to cart codes
+let carts = documt.querySelectorAll('.material-symbols-outlined cart');
+
+for (let i=0; i < carts.length; i++) {
+  console.log("my loop");
+}
