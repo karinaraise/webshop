@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
 h1{
@@ -103,13 +105,11 @@ body{
 }
 
 #navbar li{
-    list-style: none;
     padding: 0 20px;
     position: relative;
 }
 
 #navbar li a{
-    text-decoration: none;
     font-size: 16px;
     font-weight: 600;
     color: #073848;
@@ -422,7 +422,6 @@ footer p span{
 
 footer a{
     font-size: 13px;
-    text-decoration: none;
     color:#faabbe;
     margin-bottom: 10px;
 }
@@ -699,7 +698,6 @@ footer .copyright{
 }
 
 #blog .blog-details a{
-    text-decoration: none;
     font-size: 14px;
     color:#faabbe;
     font-weight: 700;
@@ -809,7 +807,6 @@ background-image: url("images/banners/banner4.png");
     color:#1a718e;
 }
 #about-head a{
-    text-decoration: none;
     color:#faabbe;
     transition: 0.3s ease-in-out;
 }
@@ -856,7 +853,6 @@ background-image: url("images/banners/banner4.png");
 }
 
 #contact-details .details li{
-    list-style: none;
     display: flex;
     padding: 10px 0;
     position: relative;

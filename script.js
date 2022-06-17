@@ -99,7 +99,7 @@ function cartNumbers(product) {
 
 function setItems(product) {
   let cartItems = localStorage.getItem('productsInCart');
-  cartItems = JSON.parse(cartItems); //json naar js
+  cartItems = JSON.parse(cartItems); 
   
   if(cartItems != null){
     if (cartItems[product.tag] == undefined) {
