@@ -116,8 +116,8 @@ body{
     transition: 0.3s ease;
 }
 
-.menubar li a:hover,
-.menubar li a.active {
+#navbar li a:hover,
+#navbar li a.active {
         color: #E9476F;
 }
 
