@@ -22,9 +22,22 @@
         </div>
 
         <div>
-            <ul id="navbar">
+            <ul id="navbar" class="menubar">
+
                 <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="shop.html">Shop</a></li>
+
+                <!-- begin dropdown menu-->
+                <div class="dropdown">
+                    <li><a href="#" onclick="myFunction()" class="dropbtn">Shop</a>
+                    </li>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="sproduct.html">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <!-- eind dropdown menu-->
+
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>

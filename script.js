@@ -1,3 +1,4 @@
+/* mobile */
 const bar = document.getElementById('bar');
 const close = document.getElementById('close');
 const nav = document.getElementById('navbar');
@@ -12,6 +13,26 @@ if (close) {
     close.addEventListener('click', () => {
         nav.classList.remove('active');
     })
+}
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+	document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+	if (!event.target.matches('.dropbtn')) {
+	  var dropdowns = document.getElementsByClassName("dropdown-content");
+	  var i;
+	  for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) { 
+        openDropdown.classList.remove('show');
+		  }
+	  }
+  }
 }
 
 // foto slide
@@ -135,3 +156,31 @@ function totalCost(product) {
 }
 
 onLoadCartNumbers();
+
+/* teller op winkel mand */
+var a_parent =  document.querySelectorAll(".a_parent");
+var dd_menu_a = document.querySelectorAll(".dd_menu_a");
+
+a_parent.forEach(function(aitem){
+
+		aitem.addEventListener("click", function(){
+			a_parent.forEach(function(aitem){
+				aitem.classList.remove("active");
+			})
+			dd_menu_a.forEach(function(dd_menu_item){
+				dd_menu_item.classList.remove("active");
+			})
+			aitem.classList.add("active");
+		})
+})
+
+dd_menu_a.forEach(function(dd_menu_item){
+
+		dd_menu_item.addEventListener("click", function(){
+			dd_menu_a.forEach(function(dd_menu_item){
+				dd_menu_item.classList.remove("active");
+			})
+			dd_menu_item.classList.add("active");
+		})
+})
+

@@ -23,26 +23,37 @@
         </div>
 
         <div>
-            <ul id="navbar">
+            <ul id="navbar" class="menubar">
+
                 <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
+
+                <!-- begin dropdown menu-->
+                <div class="dropdown">
+                    <li><a href="#" onclick="myFunction()" class="dropbtn">Shop</a>
+                    </li>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="sproduct.html">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <!-- eind dropdown menu-->
+
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li id="lg-bag" class="cart"><a href="cart.html"> <i
                             class="material-symbols-outlined">shopping_bag</i><span>0</span></a>
                 </li>
-                <a href="#" id="close"><i class="material-symbols-outlined">
-                        close</i></a>
+                <a href="#" id="close"><i class="material-symbols-outlined">close</i></a>
             </ul>
         </div>
 
-
         <div id="mobile">
             <a href="cart.html"> <i class="material-symbols-outlined">shopping_bag</i></a>
-            <i id="bar" class="material-symbols-outlined">
-                menu </i>
+            <i id="bar" class="material-symbols-outlined">menu</i>
         </div>
+
     </section>
 
     <section id="hero">
