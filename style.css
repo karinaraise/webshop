@@ -300,8 +300,9 @@ body{
 
 .testimonial-box {
     width: 500px;
+    height: 180px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    padding: 15px 15px;
+    padding: 15px;
     margin: 15px;
     cursor: pointer;
     border-radius: 5px;
@@ -348,6 +349,10 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+}
+.client-comment a{
+    color: #E9476F;
+    font-size: 12px;
 }
 
 .client-comment p{
@@ -753,6 +758,7 @@ footer .copyright{
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
 
 #prodetails .single-pro-details {
     width: 50%;
@@ -1415,7 +1421,7 @@ margin-top: 10px;
         font-size: 18px;
     }
     
-    #prodetails .single-pro-detailsh2{
+    #prodetails .single-pro-details h2{
         font-size: 18px;
     }
     
