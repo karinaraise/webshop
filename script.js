@@ -184,3 +184,6 @@ dd_menu_a.forEach(function(dd_menu_item){
 		})
 })
 
+function scrollWin(x, y) {
+  window.scrollBy(x, y);
+}

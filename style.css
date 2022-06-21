@@ -1190,6 +1190,15 @@ margin-top: 10px;
 }
 /* eind cart page */
 
+.read-down{
+    background-color: transparent;
+    border: none;
+    color: #E9476F;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
