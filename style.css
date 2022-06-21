@@ -1196,6 +1196,39 @@ margin-top: 10px;
     color: #E9476F;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+#cat-cirkel{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+}
+
+#cat-cirkel .cirkel-cat1{
+    width: 300px;
+    margin: 0 30px;
+    padding: 0;
+}
+
+.cirkel-cat1 img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.cirkel-cat1 a{
+    color: #E9476F;
+    font-size: 20px;
+}
+
+.cirkel-cat1 img:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -1358,6 +1391,18 @@ margin-top: 10px;
         padding: 0;
     }
     /* eind contact page*/
+
+    #cat-cirkel{
+        width: 100%;
+    }
+    #cat-cirkel .cirkel-cat1{
+        width: 180px;
+    }
+    
+    .cirkel-cat1 img{
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media (max-width: 477px){
@@ -1542,4 +1587,23 @@ margin-top: 10px;
     margin-top: 10px;
     }
     /*eind contact page */
+
+    #cat-cirkel{
+        width: 100%;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0 20px;
+        align-items:initial;
+    }
+    
+    #cat-cirkel .cirkel-cat1{
+        width: 100px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .cirkel-cat1 img{
+        width: 90px;
+        height: 90px;
+    }
 }
